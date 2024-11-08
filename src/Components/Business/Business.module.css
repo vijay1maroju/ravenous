@@ -1,0 +1,23 @@
+.business {
+    height: 80px;
+    width: 70px;
+}
+
+img {
+    height: 60px;
+    width: 50px;
+}
+
+h2, .reviews{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.food-category {
+        color: #d7d86f;
+}
+
+.rating {
+    color: #d7d86f;
+    font-weight: bold;
+}
