@@ -18,23 +18,28 @@ function SearchBar() {
     };
 
     const sortListItems = Object.entries(sortOptions).map(([label, value]) => {
-        <li key={value} onClick={() => setSortOption(value)}>
-            {label}
-        </li>
+        return (<li key={value} onClick={() => setSortOption(value)}>
+                    {label}
+                </li>);
     });
 
     return (
-        <div>
+        <div className={styles.Full}>
+            <div className={styles.list_container}>
+                <ul className={styles.horizontal_list}>
+                    {sortListItems}
+                </ul>
+            </div>   
             <div className={styles.inputBox_container}>
                 <input
-                className={styles.searchBox} 
+                className={styles.searchBox1} 
                 type="text"
                 placeholder="Search Businesses"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <input
-                className={styles.searchBox}
+                className={styles.searchBox2}
                 type="text"
                 placeholder="Where?"
                 value={searchLocation}
@@ -42,11 +47,6 @@ function SearchBar() {
                 />
             </div>
             <button onClick={handleSearch} className={styles.searchButton}>Let's Go</button>
-            <div className={styles.list_container}>
-                <ul className={styles.horizontal_list}>
-                    {sortListItems}
-                </ul>
-            </div>   
         </div>
     );
 }

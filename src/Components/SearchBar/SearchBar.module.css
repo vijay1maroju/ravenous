@@ -1,29 +1,35 @@
-.list_container {
+.Full {
     display: flex;
-    justify-content: center;
-    height: 100%;
+    flex-direction: column;
+    margin-left: -950px;
+    margin-top: -30px;
+}
+
+.list_container {
+    width: 70%;
+    margin-bottom: -40px;
+    margin-left: 530px;
+    margin-top: -180px;
 }
 
 .horizontal_list {
     display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    gap: 45px;
 }
 
 .horizontal_list li {
-    margin-right: 20px;
+    list-style-type: none;
 }
 
 .inputBox_container {
+    padding: 80px;
+    margin-left: 500px;
     display: flex;
     gap: 20px;
 }
 
-.searchBox {
-    width: 200px;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.searchButton {
+    width: 65px;
+    margin-left: 730px;
+    margin-top: -65px;
 }
