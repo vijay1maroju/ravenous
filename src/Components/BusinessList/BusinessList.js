@@ -1,4 +1,24 @@
-import React from 'react';
+import React from "react";
+import styles from "./BusinessList.module.css";
+
+import Business from "../Business/Business";
+
+const BusinessList = (props) => {
+  return (
+    <div className={styles.BusinessList}>
+      {
+        props.businesses.map((business) => {
+            return <Business business={business} key={business.name}/>;
+        })
+      }
+    </div>
+  );
+};
+
+export default BusinessList;
+
+
+/*import React from 'react';
 import Business from '../Business/Business';
 import styles from './BusinessList.module.css';
 
@@ -10,7 +30,7 @@ const businessDetails = [
         city: 'Flavortown',
         state: 'NY',
         zipCode: '10101',
-        category: 'Italian',
+        category: 'ITALIAN',
         rating: 4.5,
         reviewCount: 90
     },
@@ -21,7 +41,7 @@ const businessDetails = [
         city: 'Flavortown',
         state: 'NY',
         zipCode: '10101',
-        category: 'Italian',
+        category: 'ITALIAN',
         rating: 4.5,
         reviewCount: 90
     },
@@ -32,7 +52,7 @@ const businessDetails = [
         city: 'Flavortown',
         state: 'NY',
         zipCode: '10101',
-        category: 'Italian',
+        category: 'ITALIAN',
         rating: 4.5,
         reviewCount: 90
     },
@@ -44,7 +64,7 @@ function BusinessList() {
             {businessDetails.map((business, index) => (
                 <Business
                  key={index}
-                 image={business.image}
+                 image={business.imageSrc}
                  name={business.name}
                  address={business.address}
                  city={business.city}
@@ -59,4 +79,4 @@ function BusinessList() {
     );
 }
 
-export default BusinessList;
+export default BusinessList;*/

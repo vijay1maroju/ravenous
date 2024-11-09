@@ -1,8 +1,15 @@
-.businesses {
+.BusinessList {
     display: flex;
-    gap: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4.4rem 10%;
+  }
+
+/*.businesses {
+    display: flex;
+    gap: 10px;
     width: 100px;
     height: 100px;
-    margin-left: -540px;
-    margin-top: -290px;
-}
+    margin-left: -820px;
+    margin-top: -380px;
+}*/
