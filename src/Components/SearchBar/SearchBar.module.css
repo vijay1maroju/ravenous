@@ -29,13 +29,13 @@
   }
   
   .SearchBarSortOptions li:hover {
-    color: #d4cfcf;
+    color: greenyellow;
   }
   
   .SearchBarSortOptions li.active,
   .SearchBarSortOptions li.active:hover {
     border-bottom: 1px solid #f0c36c;
-    color: #f0c36c;
+    color: rgb(87, 233, 87);
   }
   
   .SearchBarFields {
@@ -65,7 +65,7 @@
   .SearchBarSubmit button {
     border-radius: 4px;
     padding: 0.72rem 1.7rem;
-    background-color: #cca353;
+    background-color: rgb(103, 228, 126);
     color: #ffffff;
     font-weight: 600;
     transition: background-color 0.5s;
@@ -73,7 +73,7 @@
   
   .SearchBarSubmit a:hover {
     cursor: pointer;
-    background-color: #a7874b;
+    background-color: rgb(101, 237, 101);
   }
   
   @media only screen and (max-width: 560px) {
@@ -96,43 +96,3 @@
       margin-bottom: 0.86rem;
     }
   }
-  
-
-/*.Full {
-    display: flex;
-    flex-direction: column;
-    margin-left: -1150px;
-    margin-top: -30px;
-}
-
-.list_container {
-    width: 70%;
-    margin-bottom: -40px;
-    margin-left: 530px;
-    margin-top: -180px;
-    background-color: aquamarine;
-}
-
-.horizontal_list {
-    display: flex;
-    gap: 45px;
-}
-
-.horizontal_list li {
-    list-style-type: none;
-}
-
-.inputBox_container {
-    padding: 60px;
-    border: 90px;
-    margin-left: 500px;
-    display: flex;
-    gap: 20px;
-    background-color: brown;
-}
-
-.searchButton {
-    width: 65px;
-    margin-left: 730px;
-    margin-top: -65px;
-}*/

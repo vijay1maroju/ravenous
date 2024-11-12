@@ -38,21 +38,3 @@ const Business = (props) => {
 };
 
 export default Business;
-
-/*import React from 'react';
-import styles from './Business.module.css';
-
-function Business({ image, name, address, city, state, zipcode, category, rating, reviewCount }) {
-  return (
-    <div className={styles.business}>
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
-      <p>{address}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<span className={styles.food-category}>{category}</span></p> 
-      <p>{city}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span className={styles.rating}>{rating} stars</span></p> 
-      <p>{state}&nbsp;{zipcode}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<span className={styles.reviews}> {reviewCount} reviews</span></p>
-      <p> </p>
-    </div>
-    );
-}
-
-export default Business;*/
